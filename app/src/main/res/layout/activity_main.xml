@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    tools:context=".MainActivity"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#99000000"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+        android:radius="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Calculatrice"
+            android:textColor="#FAF7F7"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/nbr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="1er Nombre"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#FFF" />
+
+        <EditText
+            android:id="@+id/nbr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="2ème Nombre"
+            android:backgroundTint="#FFF"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#FFF" />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Resultat = "
+            android:textColor="#FAF7F7"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#99000000"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:layout_centerInParent="true"
+            android:radius="10dp">
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#00BCD4"
+                android:layout_margin="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:onClick="calculatrice"
+                android:text=" + "
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#F44336"
+                android:layout_margin="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:onClick="calculatrice"
+                android:text=" - "
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/diviser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#8BC34A"
+                android:layout_margin="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:onClick="calculatrice"
+                android:text=" / "
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/multiplier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" X "
+                android:paddingBottom="15dp"
+                android:layout_margin="10dp"
+                android:paddingTop="15dp"
+                android:onClick="calculatrice"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
